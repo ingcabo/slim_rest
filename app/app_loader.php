@@ -5,6 +5,7 @@ $folders = [
     'lib',
     'model',
     'route',
+    'route/Controller'
 ];
 
 foreach($folders as $f)

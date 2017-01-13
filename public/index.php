@@ -16,11 +16,6 @@ session_start();
 $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);
 
-// Set up dependencies
-require __DIR__ . '/../src/dependencies.php';
-
-// Register middleware
-require __DIR__ . '/../src/middleware.php';
 
 // Register routes
 require __DIR__ . '/../src/routes.php';
@@ -28,8 +23,6 @@ require __DIR__ . '/../src/routes.php';
 // Register my App
 require __DIR__ . '/../app/app_loader.php';
 
-//
-require_once __DIR__ . '..\..\app\lib\facebook-sdk-v5\src\Facebook\autoload.php';
 
 // Run app
 $app->run();
