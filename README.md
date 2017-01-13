@@ -10,6 +10,9 @@ Test Aivo
 
 3) Route for test Aivo (Here are the functions to consume) slim_rest\app\route\api_graph_route.php
 
+New controlller in the route that contains the method of calling the facebook api
+slim_rest/app/route/Controller/ControllerFb.php
+
 You should access the service by the following url, Idaparam(int)=numbre of Facebook User Id
 
 http://localhost/slim_rest/public/slim/Idaparam
