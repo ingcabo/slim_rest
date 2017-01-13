@@ -1,4 +1,19 @@
 <?php
+// ******************************* INFORMATION ***************************//
+
+// ***********************************************************************//
+//  
+// ** class ControllerFb - Class containing the facebook api. 
+// ** 
+// ** @author   Carlos Ramirez <ingcabo@gmail.com>
+// ** @date 	13-01-2017
+// ** @access   Pubilc
+// ** @param    Just receive facebook user "id"
+// ** @return   Returns a json with the user's public data in the body 
+//      
+// ***********************************************************************//
+
+// ********************************** START ******************************//  
 namespace app\route\Controller;
 
 
@@ -9,7 +24,7 @@ class ControllerFb {
 	protected $_Version;
  
 	public function __construct() {
-	
+	//You must create two environment variables in your operating system, <GaapiId> and <GappSect>
 	$this->_GaapiId = getenv("GaapiId");
 	$this->_GappSect= getenv("GappSect");
 	$this->_Version = 'v2.8';  
